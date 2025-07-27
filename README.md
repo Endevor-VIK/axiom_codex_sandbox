@@ -1,2 +1,23 @@
-# axiom_codex_sandbox
-AXIOM SYSTEM experimental sandbox for AI-powered code analysis and agent workflows. No production data. For Codex &amp; AI Agents test only.
+# AXIOM Codex Sandbox
+
+**Этот репозиторий — лабораторная песочница для тестирования Codex и AI-агентов на базе проекта AXIOM SYSTEM.**
+
+---
+
+## Назначение
+
+- Эксперименты с генерацией и анализом кода с помощью OpenAI Codex и AI-агентов.
+- Тестирование автоматизации, парсинга, разметки, проверки структуры.
+- Нет продакшн-данных! Всё — только для разработки и демонстрации.
+
+---
+
+## Важно
+
+- Этот репозиторий НЕ отражает основное ядро AXIOM SYSTEM.
+- Содержимое может быть удалено или изменено в любой момент.
+- Не используйте файлы из sandbox в рабочем проекте.
+
+---
+
+**AXIOM SYSTEM | R&D Sandbox | Digital Experiments**
