@@ -1,0 +1,205 @@
+QDialog, QMainWindow {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #1a1114, stop:1 #260b11);
+}
+
+QWidget#AxiomCard {
+    background: rgba(30, 10, 20, 0.96);
+    border: 3.3px solid #e53935;
+    border-radius: 25px;
+    box-shadow: 0 0 66px #ff5252cc, 0 7px 62px #1a040baa inset;
+    padding: 36px 40px 32px 40px;
+    color: #ffe6e3;
+    font-family: 'JetBrains Mono', 'Orbitron', 'Fira Mono', monospace;
+}
+
+QLabel#AxiomTitle {
+    color: #ff4444;
+    font-size: 28px;
+    font-family: 'Orbitron', 'JetBrains Mono', monospace;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-shadow: 0 0 15px #ff525299;
+    margin-bottom: 9px;
+}
+
+QLineEdit {
+    background: #1a0b12;
+    color: #ffadad;
+    border: 2.5px solid #e53935;
+    border-radius: 13px;
+    font-size: 18px;
+    padding: 11px 18px;
+    margin-bottom: 16px;
+}
+QLineEdit:focus {
+    border: 3.0px solid #fd1a29;
+    background: #220c13;
+    color: #fff0e0;
+}
+
+QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #e53935, stop:1 #a80c1d);
+    color: #1e0000;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 13px;
+    padding: 12px 0px;
+    border: none;
+    margin: 14px 0 0 0;
+    font-family: 'Orbitron', 'JetBrains Mono', monospace;
+    letter-spacing: 0.12em;
+}
+QPushButton:hover {
+    background: #fd1a29;
+    color: #fff;
+}
+QPushButton:disabled {
+    background: #3c2a2e;
+    color: #c87d7d;
+}
+
+QLabel#AxiomFooter {
+    color: #c87474;
+    font-size: 13.5px;
+    margin-top: 20px;
+    letter-spacing: 0.04em;
+}
+
+QMainWindow {
+    background: #181317;
+}
+QLabel {
+    font-family: 'JetBrains Mono', monospace;
+}
+QFrame#menuCard {
+    background: qlineargradient(
+        x1:0 y1:0, x2:1 y2:1,
+        stop:0 #191416, stop:1 #241417
+    );
+    border: 2.3px solid #ff2946;
+    border-radius: 16px;
+    box-shadow: 0 0 24px #ff294640;
+}
+QPushButton#svgGenBtn {
+    color: #fff0f0;
+    background: qlineargradient(x1:0 y1:0, x2:1 y2:1,
+        stop:0 #ff2946, stop:1 #bb212a);
+    border-radius: 10px;
+    padding: 10px 34px;
+    letter-spacing: 0.07em;
+    border: 2px solid #ff2946;
+    box-shadow: 0 0 16px #ff294670;
+}
+QPushButton#svgGenBtn:hover {
+    background: #ff5a74;
+    color: #181212;
+    border: 2px solid #fff;
+}
+QPushButton#settingsBtn {
+    color: #ffb6bc; background: #1e1417;
+    border: 2px solid #b8373c;
+    border-radius: 10px;
+    padding: 10px 24px;
+    letter-spacing: 0.06em;
+}
+QPushButton#settingsBtn:hover {
+    background: #39191c;
+    color: #ff2946;
+    border: 2px solid #ff2946;
+}
+QPushButton#modulesBtn {
+    color: #fff0f0; background: #17161a;
+    border: 2px solid #7b303c;
+    border-radius: 10px;
+    padding: 10px 24px;
+    letter-spacing: 0.06em;
+}
+QPushButton#modulesBtn:hover {
+    background: #2a151a;
+    color: #ff2946;
+    border: 2px solid #ff2946;
+}
+
+QFrame#mainCard {
+    background: #1a1417;
+    border: 2.5px solid #ff2946;
+    border-radius: 22px;
+    box-shadow: 0 0 36px #ff29463a;
+}
+QLabel#axiomIcon {
+    color: #ff2946;
+    letter-spacing: 0.13em;
+    margin-bottom: 5px;
+    text-shadow: 0 0 12px #ff294650;
+}
+QLabel#axiomTitle {
+    color: #ff2946;
+    letter-spacing: 0.07em;
+    font-weight: bold;
+    text-shadow: 0 0 7px #ff2946a0;
+}
+QLabel#axiomSubtitle {
+    color: #ff686f;
+    letter-spacing: 0.07em;
+    font-weight: 600;
+}
+QFrame#axiomLine {
+    background: #ff2946;
+    max-height: 2px;
+}
+QPushButton#svgGenBtn, QPushButton#settingsBtn, QPushButton#modulesBtn {
+    min-width: 140px;
+    min-height: 38px;
+    font-weight: bold;
+    border-radius: 12px;
+    background: qlineargradient(x1:0 y1:0, x2:1 y2:1, stop:0 #ff2946, stop:1 #bb212a);
+    color: #fff2f2;
+    border: 2px solid #ff2946;
+    box-shadow: 0 0 10px #ff294650;
+}
+QPushButton#svgGenBtn:hover, QPushButton#settingsBtn:hover, QPushButton#modulesBtn:hover {
+    background: #ff5a74;
+    color: #181212;
+    border: 2px solid #fff;
+}
+QLabel#axiomStatus {
+    color: #ff2946;
+    letter-spacing: 0.10em;
+    margin-top: 18px;
+}
+
+QWidget#AxiomCard {
+    background: #141016;
+    border: 2.2px solid #fd1a29;
+    border-radius: 24px;
+    box-shadow: 0 0 36px #fd1a293a;
+}
+QLabel#AxiomTitle {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+    margin-bottom: 7px;
+}
+QLabel#AxiomFooter {
+    color: #fd1a29;
+    font-size: 12px;
+    margin-top: 12px;
+    letter-spacing: 0.11em;
+}
+QPushButton#svgGenBtn, QPushButton#settingsBtn, QPushButton#modulesBtn {
+    min-width: 140px;
+    min-height: 36px;
+    font-weight: bold;
+    border-radius: 11px;
+    background: qlineargradient(x1:0 y1:0, x2:1 y2:1, stop:0 #fd1a29, stop:1 #bb212a);
+    color: #fff2f2;
+    border: 2px solid #fd1a29;
+    box-shadow: 0 0 9px #fd1a2950;
+}
+QPushButton#svgGenBtn:hover, QPushButton#settingsBtn:hover, QPushButton#modulesBtn:hover {
+    background: #fd5a74;
+    color: #181212;
+    border: 2px solid #fff;
+}

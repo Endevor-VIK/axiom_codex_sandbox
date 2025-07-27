@@ -1,0 +1,21 @@
+<!-- AXIOM_SVG_TEMPLATE_HEADER
+FILE: badge.svg.j2
+TITLE: AXIOM SVG TEMPLATE — BADGE
+VERSION: v1.0
+STATUS: ACTIVE
+ZONE: [11_SYSTEM_INTERFACE/11.01_PYQT_PANEL/ui/templates]
+COMMENT: Sci-fi badge для маркировки секторов, имплантов, статусов и т.д. Кастомизируется через параметры и шаблоны.
+AUTHOR: CREATOR & AXIOM
+DATE: 2025-07-26
+-->
+
+<svg width="{size}" height="{size}" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Основной фон badge -->
+  <rect x="10" y="18" width="40" height="24" rx="8" fill="{bg}" opacity="{bg_opacity}" />
+  <!-- Внешний border/контур (можно задать glow) -->
+  <rect x="10" y="18" width="40" height="24" rx="8" fill="none" stroke="{color}" stroke-width="{border_width}" opacity="{border_opacity}" />
+  <!-- Декоративный sci-fi эл-т (например, энергетическая полоса/shape) -->
+  <ellipse cx="30" cy="30" rx="17" ry="6.5" fill="{decor_color}" fill-opacity="{decor_opacity}" />
+  <!-- Основной label (в центре badge) -->
+  <text x="30" y="36" text-anchor="middle" fill="{label_color}" font-size="{label_size}" font-family="JetBrains Mono, monospace" font-weight="bold">{label}</text>
+</svg>

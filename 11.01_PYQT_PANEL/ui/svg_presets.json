@@ -1,0 +1,100 @@
+{
+    "AXIOM_JSON_HEADER": {
+      "file": "svg_presets.json",
+      "title": "AXIOM SVG PRESETS",
+      "version": "v1.0",
+      "status": "ACTIVE / EXPANDABLE",
+      "zone": "[11_SYSTEM_INTERFACE/11.01_PYQT_PANEL/ui]",
+      "comment": "Расширяемая система цветовых профилей, пресетов и тем для SVG-генератора AXIOM SYSTEM.",
+      "author": "CREATOR & AXIOM",
+      "date": "2025-07-26"
+    },
+    "presets": {
+      "VIKTOR_CORE": {
+        "template": "core.svg.j2",
+        "description": "Фирменное sci-fi ядро Виктора. Фиолетовые тона, белый glow, греческий символ Ω.",
+        "params": {
+          "size": 56,
+          "color": "#ae51ff",
+          "bg": "#191726",
+          "glow_color": "#efb6ff",
+          "glow_opacity": 0.18,
+          "blade_opacity": 0.15,
+          "ring_opacity": 0.21,
+          "core_color": "#fff6ff",
+          "core_opacity": 0.88,
+          "label": "Ω",
+          "label_color": "#ae51ff"
+        }
+      },
+      "TECH_NODE": {
+        "template": "core.svg.j2",
+        "description": "Ярко-голубое tech-ядро для сектора технологий.",
+        "params": {
+          "size": 56,
+          "color": "#00ffdd",
+          "bg": "#141921",
+          "glow_color": "#44fff0",
+          "glow_opacity": 0.20,
+          "blade_opacity": 0.11,
+          "ring_opacity": 0.24,
+          "core_color": "#c8fff6",
+          "core_opacity": 0.85,
+          "label": "T",
+          "label_color": "#00ffdd"
+        }
+      },
+      "LAB_BADGE": {
+        "template": "badge.svg.j2",
+        "description": "Лейбл лаборатории. Фиолетовый border, надпись LAB-04.",
+        "params": {
+          "size": 56,
+          "bg": "#181a26",
+          "bg_opacity": 0.95,
+          "color": "#ae51ff",
+          "border_width": 2.2,
+          "border_opacity": 1,
+          "decor_color": "#ae51ff",
+          "decor_opacity": 0.13,
+          "label": "LAB-04",
+          "label_color": "#ae51ff",
+          "label_size": 17
+        }
+      },
+      "SEC_ALERT": {
+        "template": "badge.svg.j2",
+        "description": "Красный sci-fi badge для статуса ALERT.",
+        "params": {
+          "size": 56,
+          "bg": "#1c1016",
+          "bg_opacity": 0.92,
+          "color": "#ff2c5b",
+          "border_width": 2.7,
+          "border_opacity": 0.93,
+          "decor_color": "#ff2c5b",
+          "decor_opacity": 0.21,
+          "label": "ALERT",
+          "label_color": "#ff2c5b",
+          "label_size": 19
+        }
+      },
+      "ZONE_SIGMA": {
+        "template": "core.svg.j2",
+        "description": "Экспериментальный прототип для скрытого сектора SIGMA (не для публикации).",
+        "params": {
+          "size": 62,
+          "color": "#fff236",
+          "bg": "#2c2e00",
+          "glow_color": "#f8ff98",
+          "glow_opacity": 0.15,
+          "blade_opacity": 0.08,
+          "ring_opacity": 0.18,
+          "core_color": "#fffbea",
+          "core_opacity": 0.84,
+          "label": "Σ",
+          "label_color": "#fff236"
+        }
+      }
+    }
+  }
+  

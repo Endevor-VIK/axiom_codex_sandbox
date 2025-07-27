@@ -1,0 +1,27 @@
+<!-- AXIOM_SVG_TEMPLATE_HEADER
+FILE: core.svg.j2
+TITLE: AXIOM SVG TEMPLATE — CORE NODE
+VERSION: v1.0
+STATUS: ACTIVE
+ZONE: [11_SYSTEM_INTERFACE/11.01_PYQT_PANEL/ui/templates]
+COMMENT: Универсальный sci-fi шаблон для ядра/узла/глифов. Все ключевые параметры выносятся в config.
+AUTHOR: CREATOR & AXIOM
+DATE: 2025-07-26
+-->
+
+<svg width="{size}" height="{size}" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Внешнее кольцо (glow) -->
+  <circle cx="30" cy="30" r="29" stroke="{glow_color}" stroke-width="3.2" fill="none" opacity="{glow_opacity}"/>
+  <!-- Основное ядро -->
+  <circle cx="30" cy="30" r="28" stroke="{color}" stroke-width="2.5" fill="{bg}"/>
+  <!-- Клинок/глиф -->
+  <path d="M30 14 L38 30 L30 46 L22 30 Z" fill="{color}" fill-opacity="{blade_opacity}"/>
+  <!-- Внутреннее энергокольцо -->
+  <circle cx="30" cy="30" r="9.4" fill="{color}" fill-opacity="{ring_opacity}"/>
+  <!-- Внутреннее ядро -->
+  <circle cx="30" cy="30" r="3.7" fill="{core_color}" fill-opacity="{core_opacity}"/>
+  <!-- (Опционально) Текст/лейбл внутри ядра -->
+  {% if label %}
+    <text x="30" y="34" text-anchor="middle" fill="{label_color}" font-size="12" font-family="JetBrains Mono, monospace">{label}</text>
+  {% endif %}
+</svg>

@@ -1,0 +1,223 @@
+{
+  "_meta": {
+    "version": "BETA",
+    "generated_by": "00.00.gns.05_AUTOFILL_ALL_NAV.py",
+    "status": "auto_generated",
+    "generated_for": "11_SYSTEM_INTERFACE/11.01_PYQT_PANEL",
+    "updated_at": "2025-07-27T05:09:22.915994"
+  },
+  "tree": [
+    {
+      "title": "11.01.00.n_NAV.json",
+      "type": "file",
+      "depth": 0,
+      "id": "11.01.00.n",
+      "name": "NAV",
+      "zone": "11.01_PYQT_PANEL",
+      "root_sector": "11_SYSTEM_INTERFACE"
+    },
+    {
+      "title": "11.01.00.r_README.md",
+      "type": "file",
+      "depth": 0,
+      "id": "11.01.00.r",
+      "name": "README",
+      "zone": "11.01_PYQT_PANEL",
+      "root_sector": "11_SYSTEM_INTERFACE",
+      "title_long": "PYQT PANEL | DESKTOP INTERFACE CORE",
+      "current_version": "v0.1",
+      "status": "DRAFT",
+      "comment": "Архитектурный чертёж десктоп‑панели AXIOM SYSTEM V2 (PyQt). Содержит правила организации, структуру, принципы модульности и интеграции.",
+      "axiom_meta_id": "11.01.00.r_README.md",
+      "stage": "DRAFT"
+    },
+    {
+      "title": "LOGIN WINDOW MODULE",
+      "type": "file",
+      "depth": 0,
+      "id": "login",
+      "name": "window",
+      "zone": "[11_SYSTEM_INTERFACE]",
+      "root_sector": "11_SYSTEM_INTERFACE",
+      "file": "login_window.py",
+      "version": "v0.3",
+      "status": "DRAFT",
+      "comment": "Окно авторизации с фирменной \"карточкой\" и поддержкой QSS-стиля из axiom_style.qss.",
+      "author": "CREATOR & AXIOM",
+      "date": "2025-07-26",
+      "changelog": [
+        "v0.1 — 2025-07-26 — MVP: базовая форма логина.",
+        "v0.2 — 2025-07-26 — Вынесена авторизация в users/auth.json, SHA256-хеш.",
+        "v0.3 — 2025-07-26 — Дизайн-карточка, objectName, центрирование, поддержка QSS."
+      ]
+    },
+    {
+      "title": "PYQT PANEL LAUNCHER",
+      "type": "file",
+      "depth": 0,
+      "zone": "[11_SYSTEM_INTERFACE]",
+      "root_sector": "11_SYSTEM_INTERFACE",
+      "file": "main.py",
+      "version": "v0.2",
+      "status": "DRAFT",
+      "comment": "Точка входа для панели AXIOM SYSTEM V2. Подключает QSS-дизайн из ui/style/axiom_style.qss, запускает окна логина и основное окно.",
+      "author": "CREATOR & AXIOM",
+      "date": "2025-07-26",
+      "changelog": [
+        "v0.1 — 2025-07-26 — Инициализация файла, базовая структура и описание.",
+        "v0.2 — 2025-07-26 — Подключение QSS-стиля, поддержка структуры ui/style/axiom_style.qss."
+      ]
+    },
+    {
+      "title": "AXIOM MAIN PANEL — SYSTEM WINDOW (WITH SVG GENERATOR)",
+      "type": "file",
+      "depth": 0,
+      "id": "main",
+      "name": "window",
+      "zone": "[11_SYSTEM_INTERFACE/11.01_PYQT_PANEL/]",
+      "root_sector": "11_SYSTEM_INTERFACE",
+      "file": "main_window.py",
+      "version": "v1.2",
+      "status": "ACTIVE",
+      "comment": "Главное sci-fi окно с управлением и внешним QSS-дизайном.",
+      "author": "CREATOR & AXIOM",
+      "date": "2025-07-26",
+      "changelog": [
+        "v0.1 — 2025-07-26 — MVP окно.",
+        "v0.2 — 2025-07-26 — Card-дизайн, objectName, поддержка QSS.",
+        "v1.0 — 2025-07-26 — Первая sci-fi версия с GUI-интеграцией SVG Generator.",
+        "v1.1 — 2025-07-26 — Красная sci-fi версия с меню управления.",
+        "v1.2 — 2025-07-26 — Очистка, поддержка внешнего QSS, objectName для элементов."
+      ]
+    },
+    {
+      "title": "modules",
+      "type": "folder",
+      "children": [],
+      "count": 0,
+      "depth": 0,
+      "zone": "11_SYSTEM_INTERFACE",
+      "root_sector": "11_SYSTEM_INTERFACE",
+      "empty": true
+    },
+    {
+      "title": "native",
+      "type": "folder",
+      "children": [],
+      "count": 0,
+      "depth": 0,
+      "zone": "11_SYSTEM_INTERFACE",
+      "root_sector": "11_SYSTEM_INTERFACE",
+      "empty": true
+    },
+    {
+      "title": "ui",
+      "type": "folder",
+      "children": [
+        {
+          "title": "11.01.00.r_README_ui_CANVAS.md",
+          "type": "file",
+          "depth": 1,
+          "id": "11.01.00.r",
+          "name": "README_ui_CANVAS",
+          "zone": "11.01_PYQT_PANEL",
+          "root_sector": "11_SYSTEM_INTERFACE",
+          "title_long": "AXIOM UI / SVG STRATEGY CANVAS",
+          "current_version": "v1.0",
+          "status": "DEVELOPMENT ACTIVE",
+          "comment": "README-документ, фиксирующий стратегию и архитектуру SVG‑генератора в рамках модуля AXIOM UI.",
+          "axiom_meta_id": "11.01.00.r_README_ui_CANVAS.md",
+          "stage": "DEVELOPMENT ACTIVE"
+        },
+        {
+          "title": "AXIOM SVG GENERATOR — CORE MODULE",
+          "type": "file",
+          "depth": 1,
+          "id": "generate",
+          "name": "svg",
+          "zone": "[11_SYSTEM_INTERFACE/11.01_PYQT_PANEL/ui]",
+          "root_sector": "11_SYSTEM_INTERFACE",
+          "file": "generate_svg.py",
+          "version": "v1.0",
+          "status": "ACTIVE / EXPANDABLE",
+          "comment": "Ядро SVG-генератора. Автоматизация создания sci-fi svg на основе шаблонов и параметров.",
+          "author": "CREATOR & AXIOM",
+          "date": "2025-07-26",
+          "changelog": [
+            "v1.0 — 2025-07-26 — Стартовая версия генератора (ядро, шаблоны, CLI, presets)."
+          ]
+        },
+        {
+          "title": "AXIOM SVG GENERATOR — GUI PANEL",
+          "type": "file",
+          "depth": 1,
+          "id": "panel",
+          "name": "svg_generator",
+          "zone": "[11_SYSTEM_INTERFACE/11.01_PYQT_PANEL/ui]",
+          "root_sector": "11_SYSTEM_INTERFACE",
+          "file": "panel_svg_generator.py",
+          "version": "v0.1",
+          "status": "DRAFT / WORKING",
+          "comment": "Визуальный модуль для генерации и предпросмотра SVG (интеграция ядра генератора).",
+          "author": "CREATOR & AXIOM",
+          "date": "2025-07-26",
+          "changelog": [
+            "v0.1 — 2025-07-26 — Рабочая версия панели, поддержка шаблонов, параметров, предпросмотра и экспорта."
+          ]
+        },
+        {
+          "title": "style",
+          "type": "folder",
+          "children": [],
+          "count": 0,
+          "depth": 1,
+          "zone": "11_SYSTEM_INTERFACE",
+          "root_sector": "11_SYSTEM_INTERFACE",
+          "empty": true
+        },
+        {
+          "title": "templates",
+          "type": "folder",
+          "children": [],
+          "count": 0,
+          "depth": 1,
+          "zone": "11_SYSTEM_INTERFACE",
+          "root_sector": "11_SYSTEM_INTERFACE",
+          "empty": true
+        }
+      ],
+      "count": 3,
+      "depth": 0,
+      "zone": "11_SYSTEM_INTERFACE",
+      "root_sector": "11_SYSTEM_INTERFACE"
+    },
+    {
+      "title": "users",
+      "type": "folder",
+      "children": [
+        {
+          "title": "USER HASH GENERATOR",
+          "type": "file",
+          "depth": 1,
+          "id": "generate",
+          "name": "user",
+          "zone": "[11_SYSTEM_INTERFACE/11.01_PYQT_PANEL/users]",
+          "root_sector": "11_SYSTEM_INTERFACE",
+          "file": "generate_user.py",
+          "version": "v0.1",
+          "status": "DRAFT",
+          "comment": "Утилита для генерации SHA256-хеша пароля и добавления пользователя в auth.json.",
+          "author": "CREATOR & AXIOM",
+          "date": "2025-07-26",
+          "changelog": [
+            "v0.1 — 2025-07-26 — Инициализация файла, генерация хеша, создание auth.json, добавление пользователя."
+          ]
+        }
+      ],
+      "count": 1,
+      "depth": 0,
+      "zone": "11_SYSTEM_INTERFACE",
+      "root_sector": "11_SYSTEM_INTERFACE"
+    }
+  ]
+}
